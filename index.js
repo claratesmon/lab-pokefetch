@@ -11,7 +11,7 @@ async function getPokemon() {
             
             const imgResponse = await fetch(pokemon.url)
             const jsonImgResponse = await imgResponse.json()
-            console.log(jsonImgResponse) ////get the image
+            console.log(jsonImgResponse) ////get the image form the data we just extracted
             liElement.innerHTML += `<img src=${jsonImgResponse.sprites.front_shiny} alt=${pokemon.name}>`
               
 
